@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moonlit Vault — a tiny stealth game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #070a16;
+    color: #dfe7ff;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 0;
+    box-sizing: border-box;
+  }
+  h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #ffd94d;
+  }
+  p.tagline {
+    margin: 0;
+    font-size: 13px;
+    color: #8fa1cc;
+  }
+  canvas {
+    width: 960px;
+    height: 640px;
+    max-width: 96vw;
+    background: #1b2440;
+    border: 2px solid #39477a;
+    border-radius: 6px;
+    box-shadow: 0 12px 44px rgba(0, 0, 0, 0.6);
+  }
+  p.keys {
+    margin: 0;
+    font-size: 13px;
+    color: #aebadd;
+  }
+  p.keys b { color: #7df0dd; }
+</style>
+</head>
+<body>
+  <h1>MOONLIT VAULT</h1>
+  <p class="tagline">Slip past the wardens' lanterns and reach the exit unseen.</p>
+  <canvas id="stage" width="960" height="640"></canvas>
+  <p class="keys"><b>WASD / arrows</b> move · <b>Shift</b> sneak · <b>Enter</b> start · <b>R</b> retry</p>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
